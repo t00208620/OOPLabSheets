@@ -18,6 +18,13 @@ public class TestComputer {
         output += "\n\nCalling the multi-argument Computer constructor. " +
                 "The second Computer object details are: \n\n" + c2.toString();
 
+        Computer c3 = new Computer("Apple","Tablet",3.65,-10,-10);
+
+
+
+        output += "\n\nCalling the multi-argument Computer constructor. " +
+                "The third Computer object details are: \n\n" + c3.toString();
+
 
         JOptionPane.showMessageDialog(null,output,"Compter Object Data",
                 JOptionPane.INFORMATION_MESSAGE);
