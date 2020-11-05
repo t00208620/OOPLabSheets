@@ -1,10 +1,10 @@
 package labsheet5.exercise1;
 
 public class Book {
-    String title;
-    String ISBN;
-    double price;
-    int pages;
+    private String title;
+    private String ISBN;
+    private double price;
+    private int pages;
 
     public Book(){
         this("Title Not Available",0.00,"ISBN Not Available",0);

@@ -28,8 +28,10 @@ public class TestThermometer {
         int currentTemp = Integer.parseInt(JOptionPane.showInputDialog("Please enter the current temperature of the first thermometer to 48C"));
 
         Thermometer t4 = new Thermometer(currentTemp);
-        t4.setMaxTemp(currentTemp);
-        t4.setMinTemp(35);
+        t4.setTemperature(currentTemp);
+        t4.setTemperature(35);
+
+
 
         JOptionPane.showMessageDialog(null,"******Thermometer Testing******\n\nCalling setTemperature()....setting " +
                 "the temperature of first thermometer to " + currentTemp + "\nFirst Thermometer: " + t4.toString());
