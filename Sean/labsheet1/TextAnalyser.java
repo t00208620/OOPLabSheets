@@ -1,3 +1,5 @@
+package labsheet1;
+
 import java.util.Scanner;
 public class TextAnalyser {
     public static void main(String[] args) {

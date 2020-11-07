@@ -1,3 +1,5 @@
+package labsheet1;
+
 import javax.swing.*;
 public class NumbersMenu {
     public static void main(String[] args) {

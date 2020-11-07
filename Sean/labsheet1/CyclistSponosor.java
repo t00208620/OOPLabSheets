@@ -1,3 +1,5 @@
+package labsheet1;
+
 import javax.swing.JOptionPane;
 public class CyclistSponosor {
     public static void main(String[] args) {
