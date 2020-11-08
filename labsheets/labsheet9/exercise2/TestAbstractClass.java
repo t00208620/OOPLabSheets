@@ -1,7 +1,8 @@
 package labsheet9.exercise2;
 
 //TestAbstractClass.java
-/*A driver class to test out the Shape, Circle and Rectangle classes*/
+/*A driver class to test out the Shape, Circle, Rectangle, Triangle and Ellipse classes,
+* based on Exercise 2 in Lab Sheet 9*/
 
 public class TestAbstractClass {
       public static void main(String args[])
@@ -22,11 +23,20 @@ public class TestAbstractClass {
              Rectangle rectangle2 = new Rectangle(4.3,1.8);
              System.out.println("\n\nDetails of second Rectangle object: \n" + rectangle2);
 
+             //creating some Triangle and Ellipse objects
+             Triangle triangle1 = new Triangle();
+
+             Triangle triangle2 = new Triangle(3.24,4.23,5.78);
+
+             Ellipse ellipse1 = new Ellipse();
+
+             Ellipse ellipse2 = new Ellipse(5.62,4.19);
+
              //Creating an array of Shape to store references to all the Circle and Rectangle objects
-             //This is legal since a Circle is-a Shape and a Rectangle is-a Shape.
+             //This is legal since a Circle is-a Shape and a Rectangle is-a Shape (also Triangle and Ellipse)
              //A Shape reference can reference an object that subclasses Shape
 
-             Shape[] allShapes = {circle1,circle2,rectangle1,rectangle2};
+             Shape[] allShapes = {circle1,circle2,rectangle1,rectangle2,triangle1,triangle2,ellipse1,ellipse2};
 
              //Looping through the array of Shape references to display the state of the
              //various shapes it contains, using polymorphism and dynamic method binding
