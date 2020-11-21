@@ -117,6 +117,21 @@ public class TestArrayList{
             if (l != null)
                 System.out.println(l);
 
+        Iterator<Product> iterator = allProducts.iterator();
+
+        while (iterator.hasNext()) {
+            Product p = iterator.next();
+
+            if (p != null && p.getName().equals("Ruler"))
+                iterator.remove();
+        }
+
+        System.out.println("\n\nDisplaying the state of all products ...\n");
+        for (Product p : allProducts)
+            if (p != null)
+                System.out.println(p);
+
+
     }
 
 }
